@@ -33,7 +33,7 @@ var getUserRepos = function(user){
    .catch(function(error){
       alert("Unable to connect to GitHub")
    })
-}   
+};  
 
 
 var displayRepos = function(repos, searchTerm){
@@ -85,5 +85,5 @@ var displayRepos = function(repos, searchTerm){
    console.log(searchTerm);
 };
 
-
+// add event listener to forms
 userFormEl.addEventListener("submit", formSubmitHandler);
